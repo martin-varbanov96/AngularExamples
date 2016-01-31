@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style/style.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <title></title>
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="MainController">
+            <h1>{{product.price | currency}}</h1>
+        </div>
+        <script src="script/app.js"></script>
+        <script src="script/controller/controller.js"></script>
+    </body>
+</html>
