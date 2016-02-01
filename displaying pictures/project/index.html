@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css"/>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">    
+    <div id="main" ng-controller="MainController">
+        <h1>{{head}}</h1>  
+        <div ng-repeat = "place in places" class = "display">
+            <p class= "name">{{place.name}}</p>
+            <p class="description">{{place.description}}</p>
+            <img class = "pic" ng-src="{{place.img}}"/>
+        </div>
+    </div>
+    
+    <script src="script/app.js"></script>
+    <script src="script/controller/controller.js"> </script>
+
+</body>
+</html>
