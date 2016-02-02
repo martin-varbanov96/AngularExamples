@@ -1,0 +1,16 @@
+#main{
+    margin: 0px auto;
+    width: 50%;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;    
+}
+.desc{
+    font-style: italic;
+    font-size: 15px;    
+}
+#likeButton{
+    width: 80px;
+    height: 50px;
+}
