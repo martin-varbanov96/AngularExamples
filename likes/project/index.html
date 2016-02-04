@@ -5,23 +5,22 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style/style.css"/>
     <title></title>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </head>
 <body ng-app = "likeApp">
     <div id="main" >
-        <div class="control" ng-controller="likeController">
-            <div ng-repeat="post in posts">
-                <div class="name">{{post.name}}</div>
-                <div class="desc">{{post.desc}}</div>
-                <div class="date">{{post.date | date}}</div>
-                <div class="like-counts" ng-click="onClickLike($index)">{{post.likes}}
-                    <img id="likeButton" src="img/like.jpg"/>
+        <div class="control" ng-controller="mainController">
+            <div id="main">
+                <div class="item" ng-repeat="item in items">
+                    <app-info info="item"></app-info>
                 </div>
             </div>
+            
         </div>
     </div>
     
     <script src="script/app.js"></script>
     <script src="script/controller/controller.js"></script>
+    <script src="script/directives/dir.js"></script>
 </body>
 </html>

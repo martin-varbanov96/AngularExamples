@@ -1,22 +1,21 @@
-app.controller('likeController', ['$scope', function($scope){
-    $scope.posts =  [
+app.controller('mainController', ['$scope', function($scope){
+    $scope.items = [
         {
-            
-            name: "Loshata",
-            desc: 'Sometimes it\' more important to be happy than to be happy',
-            date: new Date("2015", '02', '02'),
-            likes: 0
+            name: "ball",
+            cost: 9.99,
+            img: "img/ball.png"
         },
         {
-            name: "Dobrata",
-            desc: "Only god can judge me",
-            date: new Date("2015", "12", '12'),
-            likes: 0
+            name: "drone",
+            cost: 1999,
+            img: "img/drone.jpg"
+        },
+        {
+            name: "headset",
+            cost: 100,
+            img: "img/headset.jpg"
         }
+        
+        
     ];
-    
-    $scope.onClickLike = function (index){
-        $scope.posts[index].likes +=1;
-    };
-    
 }]);
